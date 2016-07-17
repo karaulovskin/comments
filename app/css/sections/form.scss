@@ -1,0 +1,54 @@
+.comments__form {
+	border: 1px solid $black;
+	padding: 20px;
+	margin: 30px 0 20px 0;
+}
+
+.form {
+	position: relative;
+}
+
+.form__title {
+	background: #fff;
+	position: absolute;
+	padding: 5px;
+	top: -37px;
+}
+
+.area-name, .area-mail {
+	margin: 0 0 10px 0;
+}
+
+.area-label, .area-input {
+	display: inline-block;
+}
+
+.area-name__input {
+	margin: 0 0 0 158px;
+}
+
+.area-mail__input {
+	margin: 0 0 0 148px;
+}
+
+.area-comment__label {
+	vertical-align: top;
+}
+
+.area-comment__textarea {
+    width: 600px;
+    height: 100px;
+	margin: 0 0 0 50px;
+	resize: none;
+}
+
+.area-button {
+	margin: 0 0 0 198px;
+}
+
+.btn {
+	color: #fff;
+	background: $blue;
+	border: 1px solid #000;
+	@include border-radius(2px);
+}
