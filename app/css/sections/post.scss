@@ -1,0 +1,16 @@
+.header, .main, .header__title, .comments {
+	margin: 0 0 20px 0;
+}
+
+.header__date {
+	display: inline-block;
+	color: $grey;
+}
+
+.main__content p {
+	margin: 0 0 20px 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}

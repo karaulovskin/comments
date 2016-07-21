@@ -1,54 +1,50 @@
 .comments__form {
-	border: 1px solid $black;
-	padding: 20px;
-	margin: 30px 0 20px 0;
+	margin: 0 0 20px 0;
 }
 
 .form {
 	position: relative;
 }
 
-.form__title {
-	background: #fff;
-	position: absolute;
-	padding: 5px;
-	top: -37px;
+.form__block {
+	@extend %clearfix;
 }
 
-.area-name, .area-mail {
-	margin: 0 0 10px 0;
+.form__label, .form__input {
+	float: left;
 }
 
-.area-label, .area-input {
-	display: inline-block;
+.form__label {
+	width: 17%;
 }
 
-.area-name__input {
-	margin: 0 0 0 158px;
+.label {
+	display: block;
+	margin-bottom: 10px;
 }
 
-.area-mail__input {
-	margin: 0 0 0 148px;
+.form__input {
+	width: 83%;
 }
 
-.area-comment__label {
-	vertical-align: top;
+.input {
+	display: block;
+	margin-bottom: 10px;
 }
 
-.area-comment__textarea {
+.input--textarea {
     width: 600px;
     height: 100px;
-	margin: 0 0 0 50px;
+	margin-left: 0;
 	resize: none;
-}
-
-.area-button {
-	margin: 0 0 0 198px;
 }
 
 .btn {
 	color: #fff;
 	background: $blue;
+    font-size: 14px;
+    padding: 4px 12px;
+    outline: none;
 	border: 1px solid #000;
 	@include border-radius(2px);
 }

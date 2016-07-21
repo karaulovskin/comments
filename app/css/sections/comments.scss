@@ -1,0 +1,102 @@
+.comments__title {
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	display: block;
+}
+
+.comments__list {
+	margin: 0 0 20px 0;
+}
+
+.author {
+	@include inlineblock(middle);
+	@extend %clearfix;
+}
+
+.author__left {
+	float: left;
+	width: 10%;
+}
+
+.author__avatar {
+	width: 100px;
+	height: 100px;
+	background: $grey;
+	display: inline-block;
+}
+
+.author__right {
+	float: right;
+	width: 90%;
+}
+
+.author-block {
+	@extend %clearfix;
+}
+
+.author-block__left, .author-block__right {
+	float: left;
+}
+
+.author-block__left {
+	width: 90%;
+}
+
+.author__name {
+	@include inlineblock(top);
+}
+
+.time {
+	font-size: 12px;
+	color: $grey;
+	margin: 0 0 0 30px;
+}
+
+.rating {
+	font-size: 0;
+	border: 1px solid #000;
+	margin: 0 0 0 30px;
+	@include border-radius(2px);
+	@include inlineblock(top);
+}
+
+.rating__button {
+	height: 20px;
+	width: 34px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background: #cacaca;
+	@include inlineblock(top);
+}
+
+.rating__value {
+	height: 20px;
+	width: 36px;
+	font-size: 16px;
+    text-align: center;
+    background: #cacaca;
+    border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	@include inlineblock(top);
+}
+
+.author-block__right {
+	width: 10%;
+}
+
+.author__link {
+	display: block;
+	font-size: 18px;
+	color: $blue;
+}
+
+.message {
+	@include inlineblock(middle);
+}
+
+.reply {
+	float: right;
+}
+
+

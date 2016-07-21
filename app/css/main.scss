@@ -1,6 +1,7 @@
 // vars
 $blue: #085394;
 $black: #1f1f21;
+$grey: #666;
 
 // layout
 @import "../bower/normalize-css/normalize";
@@ -9,5 +10,6 @@ $black: #1f1f21;
 
 // styles
 @import "sections/common";
-@import "sections/page";
+@import "sections/post";
+@import "sections/comments";
 @import "sections/form";
