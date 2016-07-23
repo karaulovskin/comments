@@ -5,6 +5,7 @@ $grey: #666;
 
 // layout
 @import "../bower/normalize-css/normalize";
+@import "../bower/qtip2/jquery.qtip";
 @import "_misc/mixins";
 @import "_misc/adjustment";
 
@@ -13,3 +14,4 @@ $grey: #666;
 @import "sections/post";
 @import "sections/comments";
 @import "sections/form";
+@import "sections/qtip";

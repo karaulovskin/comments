@@ -111,9 +111,9 @@
 									<label for="" class="label area-comment__label">Текст комментария</label>
 								</div>
 								<div class="form__input">
-									<input type="text" class="input" placeholder="Введите имя">
-									<input type="email" class="input" placeholder="Введите Email">
-									<textarea class="input input--textarea" name="" id=""></textarea>
+									<input type="text" class="input" id="name" placeholder="Введите имя" qtip-position="right" qtip-content="Вы не ввели имя">
+									<input type="email" class="input" id="email" placeholder="Введите Email" qtip-position="right" qtip-content="Вы не ввели email">
+									<textarea class="input input--textarea" id="comments" name="" placeholder="Ваш комментарий" qtip-position="right" qtip-content="Вы не ввели комментарий"></textarea>
 									<div class="area-button">
 										<button class="btn" type="submit">Добавить комментарий</button>
 									</div>	
@@ -130,6 +130,7 @@
 	
 
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
