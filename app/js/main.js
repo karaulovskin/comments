@@ -78,3 +78,60 @@ var validation = (function () {
 })();
 
 validation.init();
+
+
+
+
+var myModule = (function () {
+
+	var init = function () {
+		 _setUpListners();
+   	};
+
+	var _setUpListners = function () {
+		$('#id-form').on('submit', _addComments);	
+
+	};
+
+	var _addComments = function (e) {
+	
+		e.preventDefault();
+
+		var $this = $(this),
+			form = $this,
+			url = 'add_comments.php',
+			defObj =  _ajaxForm(form, url);
+			// data = form.serialize();
+
+		// $.ajax({
+		// 	url: '/path/to/file',
+		// 	type: 'POST',
+		// 	dataType: 'json',
+		// 	data: data,
+		// })
+		// .done(function(){
+		// 	console.log("success");
+		// })
+		// .fail(function(){
+		// 	console.log("error");
+		// })
+		// .always(function(){
+		// 	console.log("complete");
+		// });
+
+	}; 
+
+	var _ajaxForm = function (form, url) {
+	
+		if (!validation.validateForm(form)) return false;
+	};
+
+
+
+	return {
+		init: init
+	};	
+
+})();
+
+myModule.init();
